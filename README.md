@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# usePopcorn
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A movie search and watch-list app built with React, from **Jonas Schmedtmann's** *The Ultimate React Course*. It lets you search movies from the OMDb API, view details, rate them, and keep track of the movies you've watched.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Live movie search** against the OMDb API as you type
+- **Movie details view** – plot, cast, director, genre, runtime, and IMDb rating
+- **Interactive star rating** (1–10) when adding a movie to your watched list
+- **Watched list & summary** – total movies, average IMDb / user rating, and average runtime
+- **Remove movies** from your watched list
+- **Persistent storage** – watched movies are saved to `localStorage`
+- **Keyboard shortcuts** – press `Escape` to close the movie details
+- **Fully responsive** across desktop, tablet, and mobile
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React 18** – function components and hooks
+- **Hooks** – `useState`, `useEffect`, `useRef`, and custom hooks (`useMovies`, `useLocalStorageState`, `useKey`)
+- **OMDb API** – movie data source via `fetch`
+- **CSS** – global stylesheet with custom properties and media queries
+- Built with **Create React App**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Course Attribution
 
-### `npm test`
+This project is part of **Jonas Schmedtmann's** *[The Ultimate React Course 2024: React, Next.js, Context, Redux](https://www.udemy.com/course/the-ultimate-react-course/)* on Udemy.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Credits
 
-### `npm run build`
+This project was built as part of the React course by Jonas Schmedtmann.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## What I Learned
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Managing state with React Hooks
+- Using useEffect for data fetching
+- Working with external APIs
+- Creating custom hooks
+- Handling loading and error states
+- Managing keyboard events
+- Working with refs using useRef
+- Building reusable React components
+- Structuring a React application
